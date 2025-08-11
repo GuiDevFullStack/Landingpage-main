@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page de Vendas</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+
+        <header>
+            <h1>Bem-vindo à Nossa Loja!</h1>
+            <p>Ofertas incríveis para você!</p>
+        </header>
+
+        <nav>
+            <a href="#" onclick="mostrarSecao('produtos')">Produtos</a>
+            <a href="#" onclick="mostrarSecao('depoimentos')">Depoimentos</a>
+            <a href="#" onclick="mostrarSecao('servicos')">Serviços</a>
+            <span class="cart-icon" onclick="toggleCarrinho()">Carrinho
+                🛒</span>
+            <div class="carrinho-lista" id="carrinho">
+                <h3>Carrinho de Compras</h3>
+                <ul id="lista_carrinho"></ul>
+                <p id="total_carrinho"><b>Total: R$0,00</b></p>
+                <button onclick="finalizarCompra()">Finalizar Compra</button>
+            </div>
+        </nav>
+
+        <div class="container" id="produtos">
+            <h2>Nossos Produtos</h2>
+            <div class="product">
+                <h3>Produto 1</h3>
+                <img src="https://via.placeholder.com/300" alt="Produto 1">
+                <p>Descrição do Produto 1. Preço: R$99,90</p>
+                <button class="cta"
+                    onclick="comprar('Produto 1', 99.90)">Comprar Agora</button>
+            </div>
+            <div class="product">
+                <h3>Produto 2</h3>
+                <img src="https://via.placeholder.com/300" alt="Produto 2">
+                <p>Descrição do Produto 2. Preço: R$149,90</p>
+                <button class="cta"
+                    onclick="comprar('Produto 2', 149.90)">Comprar
+                    Agora</button>
+            </div>
+            <div class="product">
+                <h3>Produto 3</h3>
+                <img src="https://via.placeholder.com/300" alt="Produto 3">
+                <p>Descrição do Produto 3. Preço: R$199,90</p>
+                <button class="cta"
+                    onclick="comprar('Produto 3', 199.90)">Comprar
+                    Agora</button>
+            </div>
+        </div>
+
+        <div class="container" id="servicos">
+            <h2>Nossos Serviços</h2>
+            <div class="servico">
+                <h3>Serviço 1</h3>
+                <p>Consultoria personalizada.</p>
+            </div>
+            <div class="servico">
+                <h3>Serviço 2</h3>
+                <p>Suporte técnico especializado.</p>
+            </div>
+            <div class="servico">
+                <h3>Serviço 3</h3>
+                <p>Entregas rápidas e seguras.</p>
+            </div>
+        </div>
+
+        <div class="container" id="depoimentos">
+            <h2>Depoimentos de Clientes</h2>
+            <div class="depoimento">
+                <p>"Ótimos produtos e atendimento!" - Cliente A</p>
+            </div>
+            <div class="depoimento">
+                <p>"Comprei e recomendo! Tudo de excelente qualidade." - Cliente
+                    B</p>
+            </div>
+            <div class="depoimento">
+                <p>"Entrega rápida e produtos incríveis." - Cliente C</p>
+            </div>
+            <div class="depoimento">
+                <p>"Entrega rápida e produtos incríveis." - Cliente D</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Nossa Loja. Todos os direitos reservados.</p>
+        </footer>
+
+    </body>
+    <script src="./script.js"></script>
+</html>
