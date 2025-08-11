@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  background: linear-gradient(1deg, #010107, #3b2bff);
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+nav {
+  margin: 20px 0;
+  text-align: center;
+}
+
+nav a {
+  font-weight: bold;
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.cart-icon {
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  position: relative;
+}
+
+.carrinho-lista {
+  display: none;
+  position: fixed;
+  background: white;
+  border: 1px solid #929292;
+  border-radius: 10px;
+  width: 300px;
+  height: 500px;
+  z-index: 1000;
+  right: 0;
+  margin-top: 10px;
+}
+
+.carrinho-lista ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.carrinho-lista ul li {
+  padding: 5px 0;
+}
+
+.carrinho-lista button {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.carrinho-lista button:hover {
+  background-color: #45a049;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  display: none;
+  /* Inicialmente ocultar as seções */
+}
+
+.product {
+  border: 1px solid #0330c2;
+  margin: 20px 0;
+  padding: 15px;
+  background: white;
+  border-radius: 20px;
+}
+
+.product img,
+.servico img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cta {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.cta:hover {
+  background-color: #45a049;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: white;
+}
+.depoimento,
+.servico {
+  border: 1px solid #0330c2;
+  margin: 20px 10px;
+  padding: 8px;
+  background: white;
+  border-radius: 20px;
+  height: 80px;
+  text-align: center;
+}
