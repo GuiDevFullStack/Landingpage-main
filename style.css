@@ -8,8 +8,40 @@ body {
 header {
   background: linear-gradient(1deg, #010107, #3b2bff);
   color: white;
-  text-align: center;
   padding: 1em 0;
+  width: 100vw;
+}
+
+.text_fist {
+  display: block;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.button_client,
+.button_more {
+  cursor: pointer;
+  background-color: #5a7ff8;
+  border: none;
+  border-radius: 3px;
+  width: 120px;
+  height: 25px;
+  text-align: center;
+  color: white;
+}
+.button_client,
+.button_more:hover {
+  background-color: #2853ee;
+}
+.button_client,
+.button_more:active {
+  background-color: #0236f1;
+}
+
+.link_home {
+  cursor: pointer;
+  margin-right: 30px;
+  text-align: right;
 }
 
 nav {
